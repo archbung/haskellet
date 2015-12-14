@@ -6,8 +6,10 @@ import Filterbank
 import Daubechies
 
 
-randomList :: (Random a) => Int -> [a]
-randomList seed = randoms (mkStdGen seed)
+randomList :: Int -> Int -> [Double]
+randomList n s = take n (aux s)
+    where
+        aux seed = randoms (mkStdGen seed)
 
 
 -- Decimation properties
