@@ -11,11 +11,12 @@ Currently it is divided into three parts:
 - `Daubechies.hs` which contains Daubechies mother wavelet, from `db1` to `db20`
 - `Spec.hs` contains some test
 
-As it currently stands, Haskellet is naively implemented using list-based convolution, but as far as I know, it is correct. This implementation is intended as a baseline for future implementations. Also, as of right now Haskellet doesn't use tools like [stack] (https://github.com/commercialhaskell/stack), so to if you want to try Haskellet, do it manually:
+As it currently stands, Haskellet is naively implemented using list-based convolution, but as far as I know, it is correct. This implementation is intended as a baseline for future implementations. Also, as of right now Haskellet doesn't use tools like [stack] (https://github.com/commercialhaskell/stack), so if you want to try Haskellet, do it manually:
 
-1. Clone this repo or download source file(s) that you want
-2. Load in GHCi/import it to your source
-3. NOTE: to load `Spec.hs` you will need [quickcheck] (https://hackage.haskell.org/package/QuickCheck)
+- Clone this repo or download source file(s) that you want
+- Load in GHCi/import it to your source
+NOTE: to load `Spec.hs` you will need [quickcheck] (https://hackage.haskell.org/package/QuickCheck)
+- Profit
 
 For future implementation, I would like to try:
 
