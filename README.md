@@ -7,15 +7,9 @@ Haskellet is a simple wavelet toolbox written in Haskell.  It exposes two module
 
 A full-tree transform will further decomposes both the low frequency components (approximation coefficients) and high frequency components (detail coefficients) in subsequents stages, resulting in linear frequency allocation.  In contrast, a half-tree transform only further decomposes approximation coefficients in subsequent stages, which results in logarithmic frequency allocation.
 
-As it currently stands, Haskellet is naively implemented using list-based convolution, AFAIK it is correct.  This library is intended as a baseline for future implementations. 
+As it currently stands, Haskellet is naively implemented using list-based convolution but it is correct AFAIK.  This library is intended as a baseline for future implementations. 
 
-This library uses [Stack] (https://github.com/commercialhaskell/stack), so simply clone this repo and run `stack build` or add this to your `Stack.yaml` in your project.
+This library uses [Stack], so simply clone this repo and run `stack build` or add this to your `stack.yaml` in your project directory.
 
 
-## What's next
-
-I would like to try the following:
-
-- Using better data structure, like Vector or REPA
-- Using better algorithms, like lifting
-- Try to make it concurrent
+[Stack]: https://github.com/commercialhaskell/stack
